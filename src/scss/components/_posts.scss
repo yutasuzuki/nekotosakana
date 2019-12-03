@@ -6,6 +6,7 @@
 .posts-item {
   display: block;
   padding: 24px;
+  margin-bottom: 36px;
   border-radius: 5px;
   transition: 0.2s background-color ease-in;
   text-decoration: none;
@@ -45,6 +46,8 @@
 
 .posts-thumbnail {
   margin-bottom: 24px;
+  height: 276px;
+  overflow: hidden;
   text-decoration: none;
 }
 
