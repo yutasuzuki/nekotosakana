@@ -9,34 +9,25 @@ class TagRoute extends React.Component {
     const postLinks = posts.map(post => (
       <li key={post.node.fields.slug}>
         <Link to={post.node.fields.slug}>
-          <h2 className="is-size-2">{post.node.frontmatter.title}</h2>
+          <h2 style={{ margin: 0, padding: 0, fontSize: '14px' }}>{post.node.frontmatter.title}</h2>
         </Link>
       </li>
     ))
     const tag = this.props.pageContext.tag
     const title = this.props.data.site.siteMetadata.title
     const totalCount = this.props.data.allMarkdownRemark.totalCount
-    const tagHeader = `${totalCount} post${
-      totalCount === 1 ? '' : 's'
-    } tagged with “${tag}”`
+    const tagHeader = `“${tag}”のタグは${totalCount}件あります`
 
     return (
       <Layout>
         <section className="section">
           <Helmet title={`${tag} | ${title}`} />
-          <div className="container content">
-            <div className="columns">
-              <div
-                className="column is-10 is-offset-1"
-                style={{ marginBottom: '6rem' }}
-              >
-                <h3 className="title is-size-4 is-bold-light">{tagHeader}</h3>
-                <ul className="taglist">{postLinks}</ul>
-                <p>
-                  <Link to="/tags/">Browse all tags</Link>
-                </p>
-              </div>
-            </div>
+          <h3 className="heading-primary">{tagHeader}</h3>
+          <div className="post-content">
+            <ul className="taglist">{postLinks}</ul>
+          </div>
+          <div style={{ textAlign: 'center', marginTop: '120px' }}>
+            <Link className="btn-primary" to="/tags/">全てのタグを見る</Link>
           </div>
         </section>
       </Layout>

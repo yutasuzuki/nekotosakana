@@ -1,0 +1,14 @@
+.btn-primary {
+  padding: 24px 48px;
+  font-size: 24px;
+  background-color: #291e0c;
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 50px;
+  letter-spacing: 0.12em;
+
+  &:hover {
+    background-color: #3f2e11;
+  }
+}

@@ -5,9 +5,11 @@ import Helmet from 'react-helmet'
 import { graphql, Link } from 'gatsby'
 import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
+import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
 
 export const BlogPostTemplate = ({
   content,
+  featuredimage,
   contentComponent,
   description,
   tags,
@@ -16,31 +18,36 @@ export const BlogPostTemplate = ({
 }) => {
   const PostContent = contentComponent || Content
 
+  console.log(featuredimage)
+
   return (
     <section className="section">
       {helmet || ''}
-      <div className="container content">
-        <div className="columns">
-          <div className="column is-10 is-offset-1">
-            <h1 className="title is-size-2 has-text-weight-bold is-bold-light">
-              {title}
-            </h1>
-            <p>{description}</p>
-            <PostContent content={content} />
-            {tags && tags.length ? (
-              <div style={{ marginTop: `4rem` }}>
-                <h4>Tags</h4>
-                <ul className="taglist">
-                  {tags.map(tag => (
-                    <li key={tag + `tag`}>
-                      <Link to={`/tags/${kebabCase(tag)}/`}>{tag}</Link>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ) : null}
+      <div className="post-eyecatch">
+        <PreviewCompatibleImage
+          imageInfo={{
+            image: featuredimage,
+            alt: `featured image thumbnail for post ${title}`,
+          }}
+        />
+      </div>
+      <div className="post-content">
+        <h1 className="post-heading">
+          {title}
+        </h1>
+        <p>{description}</p>
+        <PostContent content={content} />
+        {tags && tags.length ? (
+          <div>
+            <ul className="post-tags">
+              {tags.map(tag => (
+                <li key={tag + `tag`}>
+                  <Link to={`/tags/${kebabCase(tag)}/`}>{tag}</Link>
+                </li>
+              ))}
+            </ul>
           </div>
-        </div>
+        ) : null}
       </div>
     </section>
   )
@@ -49,6 +56,7 @@ export const BlogPostTemplate = ({
 BlogPostTemplate.propTypes = {
   content: PropTypes.node.isRequired,
   contentComponent: PropTypes.func,
+  featuredimage: PropTypes.string,
   description: PropTypes.string,
   title: PropTypes.string,
   helmet: PropTypes.object,
@@ -63,6 +71,7 @@ const BlogPost = ({ data }) => {
         content={post.html}
         contentComponent={HTMLContent}
         description={post.frontmatter.description}
+        featuredimage={post.frontmatter.featuredimage}
         helmet={
           <Helmet titleTemplate="%s | Blog">
             <title>{`${post.frontmatter.title}`}</title>
@@ -97,6 +106,13 @@ export const pageQuery = graphql`
         title
         description
         tags
+        featuredimage {
+          childImageSharp {
+            fluid(maxWidth: 120, quality: 100) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
       }
     }
   }

@@ -1,0 +1,26 @@
+.field {
+  display: flex;
+  margin-bottom: 24px;
+}
+
+.label {
+  width: 160px;
+  padding-top: 10px;
+}
+
+.control {
+  flex: 1;
+}
+
+.input,
+.textarea {
+  width: 100%;
+  border: 1px #ccc solid;
+  padding: 8px;
+  border-radius: 5px;
+  line-height: 1.6;
+}
+
+.textarea {
+  height: 240px;
+}

@@ -1,0 +1,40 @@
+.footer {
+  margin-top: 240px;
+  background-color: rgba(251, 251, 251, 0.5);
+  padding: 48px 48px 12px;
+  border-top: 1px #ccc solid;
+}
+
+.footer-inner {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.footer-nav {
+  display: flex;
+  justify-content: space-between;
+
+  ul {
+    padding: 0;
+    margin-right: 16px;
+    list-style: none;
+  }
+
+  a {
+    display: inline-block;
+    font-family: 'Raleway', sans-serif;
+    font-size: 12px;
+    text-decoration: none;
+    margin-right: 10px;
+    line-height: 1.5;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    vertical-align: top;
+  }
+}
+
+.footer-copyright {
+  text-align: center;
+  padding: 10px;
+}

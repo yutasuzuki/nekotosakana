@@ -1,0 +1,42 @@
+.referral-card-wrapper {
+  width: $post-width;
+  padding: 48px 0;
+  margin: 0 auto;
+}
+
+.referral-card {
+  display: inline-flex;
+  background-color: rgba(253, 253, 253, 0.5);
+  border: 1px #ccc solid;
+  border-radius: 5px;
+  padding: 24px;
+}
+
+.referral-card-thumbnail {
+  display: inline-block;
+  width: 120px;
+  height: 120px;
+  border-radius: 60px;
+  overflow: hidden;
+  object-fit: contain;
+
+  img {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+.referral-card-body {
+  flex: 1;
+  padding-left: 24px;
+}
+
+.referral-card-name {
+  font-size: 18px;
+  margin-bottom: 12px;
+  font-weight: bold;
+}
+
+.referral-card-text {
+  font-size: 14px;
+}
