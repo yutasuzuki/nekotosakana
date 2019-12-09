@@ -107,7 +107,6 @@ export const pageQuery = graphql`
       frontmatter {
         date(formatString: "MMMM DD, YYYY")
         title
-        lead
         description
         tags
         featuredimage {
