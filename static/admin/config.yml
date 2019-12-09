@@ -20,7 +20,7 @@ collections:
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "blog-post"}
       - {label: "Title", name: "title", widget: "string"}
-      - {label: "Lead", name: "Lead", widget: "markdown"}
+      - {label: "Lead", name: "lead", widget: "markdown"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Description", name: "description", widget: "text"}
       - {label: "Guest Image", name: "Guestimage", widget: image}

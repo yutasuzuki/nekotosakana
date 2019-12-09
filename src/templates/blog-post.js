@@ -12,13 +12,12 @@ export const BlogPostTemplate = ({
   featuredimage,
   contentComponent,
   description,
+  lead,
   tags,
   title,
   helmet,
 }) => {
   const PostContent = contentComponent || Content
-
-  console.log(featuredimage)
 
   return (
     <section className="section">
@@ -35,7 +34,7 @@ export const BlogPostTemplate = ({
         <h1 className="post-heading">
           {title}
         </h1>
-        <p>{description}</p>
+        <p>{lead}</p>
         <PostContent content={content} />
         {tags && tags.length ? (
           <div>
@@ -59,17 +58,21 @@ BlogPostTemplate.propTypes = {
   featuredimage: PropTypes.string,
   description: PropTypes.string,
   title: PropTypes.string,
+  lead: PropTypes.string,
   helmet: PropTypes.object,
 }
 
 const BlogPost = ({ data }) => {
   const { markdownRemark: post } = data
 
+  console.log('post', post)
+
   return (
     <Layout>
       <BlogPostTemplate
         content={post.html}
         contentComponent={HTMLContent}
+        lead={post.frontmatter.lead}
         description={post.frontmatter.description}
         featuredimage={post.frontmatter.featuredimage}
         helmet={
@@ -104,6 +107,7 @@ export const pageQuery = graphql`
       frontmatter {
         date(formatString: "MMMM DD, YYYY")
         title
+        lead
         description
         tags
         featuredimage {
