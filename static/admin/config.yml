@@ -19,7 +19,7 @@ collections:
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "blog-post"}
-      - {label: "タイトル"", name: "title", widget: "string"}
+      - {label: "タイトル", name: "title", widget: "string"}
       - {label: "リード文", name: "leadtext", widget: "markdown"}
       - {label: "ゲストサムネイル", name: "guestimage", widget: image}
       - {label: "ゲスト名", name: "guestname", widget: "text"}
