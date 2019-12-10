@@ -21,7 +21,7 @@ export const BlogPostTemplate = ({
   guesttext,
 }) => {
   const PostContent = contentComponent || Content
-
+  console.log('guestimage', guestimage)
   return (
     <section className="section">
       {helmet || ''}
@@ -38,11 +38,11 @@ export const BlogPostTemplate = ({
           {title}
         </h1>
         <p>{lead}</p>
-        <ReferralCard
+        {guestimage && <ReferralCard
           thumbnail={guestimage.childImageSharp.fluid.src}
           name={guestname}
           text={guesttext}
-        />
+        />}
         <PostContent content={content} />
         {tags && tags.length ? (
           <div>
