@@ -58,7 +58,6 @@ BlogPostTemplate.propTypes = {
   featuredimage: PropTypes.string,
   description: PropTypes.string,
   title: PropTypes.string,
-  lead: PropTypes.string,
   helmet: PropTypes.object,
 }
 
@@ -72,7 +71,6 @@ const BlogPost = ({ data }) => {
       <BlogPostTemplate
         content={post.html}
         contentComponent={HTMLContent}
-        lead={post.frontmatter.lead}
         description={post.frontmatter.description}
         featuredimage={post.frontmatter.featuredimage}
         helmet={

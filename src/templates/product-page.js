@@ -174,13 +174,6 @@ export const productPageQuery = graphql`
         description
         intro {
           blurbs {
-            image {
-              childImageSharp {
-                fluid(maxWidth: 552, quality: 90) {
-                  ...GatsbyImageSharpFluid
-                }
-              }
-            }
             text
           }
           heading
