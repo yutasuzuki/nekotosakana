@@ -2,15 +2,15 @@
 templateKey: blog-post
 title: '!!!!Making sense of the SCAA’s new Flavor Wheel'
 leadtext: dsadadasdasdsad
-guestimage: /img/illustrain10-neko26.png
-guestname: dasdasdasdas
-guesttext: dsadasdasdasdsadsa
+guestimage: /img/saunar_keta_thumbnail.jpg
+guestname: サウナーけた
+guesttext: サウナタイムというサウナメディアを運営。日本中のサウナを歩き回り、最近では熱波師も行なっている。
 featuredpost: false
 featuredimage: /img/flavor_wheel.jpg
 tags:
   - flavor
   - tasting
-date: 2016-12-06T15:04:10.000Z
+date: 2019-12-09T15:04:10.000Z
 description: "The Coffee Taster’s Flavor Wheel, the official resource used by coffee\t tasters, has been revised for the first time this year.!!"
 ---
 !!
