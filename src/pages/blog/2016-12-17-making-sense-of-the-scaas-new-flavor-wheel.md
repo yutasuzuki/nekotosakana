@@ -1,37 +1,70 @@
 ---
 templateKey: blog-post
-title: '!!!!Making sense of the SCAA’s new Flavor Wheel'
-leadtext: dsadadasdasdsad
+title: '#1 サウナーけたさんとランチを食べた'
+leadtext: |-
+  今回は赤坂にある中華料理屋　香港亭に行きました。
+  なぜ赤坂かというともちろんサウナに行っていたからです。サウナ好きの人ならどこのサウナか察しがつくと思いますが、シングルの水風呂がある場所です。
 guestimage: /img/saunar_keta_thumbnail.jpg
 guestname: サウナーけた
-guesttext: サウナタイムというサウナメディアを運営。日本中のサウナを歩き回り、最近では熱波師も行なっている。
+guesttext: |2-
+   [サウナタイム](https://saunatime.jp/)というサウナメディアを運営。サウナをこよなく愛し、家もサウナの有無で決めるほど。サウナでは熱波師も行なっており、都内でサウナイベントも数多くこなしている。
+  Twitter: [@chieskta](https://twitter.com/chieskta)
 featuredpost: false
-featuredimage: /img/flavor_wheel.jpg
+featuredimage: /img/saunar_keta.png
 tags:
-  - flavor
-  - tasting
+  - ランチ
+  - サウナ
 date: 2019-12-09T15:04:10.000Z
 description: "The Coffee Taster’s Flavor Wheel, the official resource used by coffee\t tasters, has been revised for the first time this year.!!"
 ---
-!!
+## 本日のランチメニュー
 
-The SCAA updated the wheel to reflect the finer nuances needed to describe flavors more precisely. The new descriptions are more detailed and hence allow cuppers to distinguish between more flavors.	
+**サウナーけたさん**\
+麻婆豆腐麺\
+**ゆうた**\
+蒸し鶏のねぎソースがけ定食
 
-While this is going to be a big change for professional coffee tasters, it means a lot to you as a consumer as well. We’ll explain how the wheel came to be, how pros use it and what the flavors actually mean.	
 
-## What the updates mean to you	
 
-The Specialty Coffee Association of America (SCAA), founded in 1982, is a non-profit trade organization for the specialty coffee industry. With members located in more than 40 countries, SCAA represents every segment of the specialty coffee industry, including:	
+![蒸し鶏のねぎソースがけ定食](/img/lunch1.jpg "蒸し鶏のねぎソースがけ定食")
 
-* producers	
-* roasters	
-* importers/exporters	
-* retailers	
-* manufacturers	
-* baristas	
 
-For over 30 years, SCAA has been dedicated to creating a vibrant specialty coffee community by recognizing, developing and promoting specialty coffee. SCAA sets and maintains quality standards for the industry, conducts market research, and provides education, training, resources, and business services for its members.	
 
-Coffee cupping, or coffee tasting, is the practice of observing the tastes and aromas of brewed coffee. It is a professional practice but can be done informally by anyone or by professionals known as "Q Graders". A standard coffee cupping procedure involves deeply sniffing the coffee, then loudly slurping the coffee so it spreads to the back of the tongue.	
+## 家族が好きすぎるけたさん
 
-The coffee taster attempts to measure aspects of the coffee's taste, specifically the body (the texture or mouthfeel, such as oiliness), sweetness, acidity (a sharp and tangy feeling, like when biting into an orange), flavour (the characters in the cup), and aftertaste. Since coffee beans embody telltale flavours from the region where they were grown, cuppers may attempt to identify the coffee's origin.
+サウナの話はサウナ内でたっぷりしたので、プライベートな話題をしました。
+この日はずっと一緒にいたのでランチで話した内容かは定かではありません(笑)
+
+### ちょろいお父さん
+
+けたさんには小学生の息子と3歳の娘がおり、とにかく甘いという事です。
+そして子供たちいいようにされているようでした。
+けたさんが家でよっている時に、子供たちがお嫁さんがいなくなったのを見計らって、欲しい商品のAmazonの購入画面の購入確定ボタンまで持っていき、気分の良くなっているけたさんがそのボタンを押してしまうという寸法です。
+
+ちょろすぎるだろと思ったので、そのまま伝えました。
+
+### 夫婦円満の秘訣
+
+特に夫婦関係は良好で周りから秘訣を聞かれる事が多いみたいです。しかし秘訣については明言を避けたいと思います。ヒントはけたさんは食欲と性欲が半端ないとの事です。
+
+詳しい話は本人から直接聞いてください。
+
+### 嫁を大切にするけたさん、妹を大切にする息子
+
+けたさんは嫁を愛しすぎています。それを見た息子さんが女性は大切にするものという事が擦り込まれているようです。
+なので家族のヒエラルキーは、「娘　＞　妻　＞　息子　＞　けたさん」になっています。
+けたさんの人柄がよく出ている話ですし、見習いたいですね。
+
+### 実は物書きを目指していた
+
+けたさんは元々は営業畑の人なので、記事を書く為にブログとかって昔からやっているのか気になりました。
+
+聞いてみたところ、やっていないとのこと。
+
+そこで更に聞いてみると、小説などを書き出版社に送っていたということでした。失礼かもしれませんが、見た目からは想像もつきませんでした。しかも純文学...。
+
+今でも記事の中で小説を書いていた時の癖が出てしまうみたいです。
+
+## 食べたらサウナの聖地マルシンへ
+
+ランチを食べた後は次のサウナ、マルシンに行き、しっかり整えてから解散しました。けたさんの食欲がここでも爆発し、マルシンで飲んだにもかかわらず、帰りに何か食べようか迷っていましたが、ここは何も食べずに家族の待つ家に帰っていきました。
