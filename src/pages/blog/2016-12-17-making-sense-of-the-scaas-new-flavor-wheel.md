@@ -3,8 +3,8 @@ templateKey: blog-post
 title: '!!!!Making sense of the SCAA’s new Flavor Wheel'
 leadtext: dsadadasdasdsad
 guestimage: /img/illustrain10-neko26.png
-guestname: dasdasdasdas
-guesttext: dsadasdasdasdsadsa
+guestname: サウナーけた
+guesttext: サウナタイムというサウナメディアを運営。日本中のサウナを歩き回り、最近では熱波師も行なっている。
 featuredpost: false
 featuredimage: /img/flavor_wheel.jpg
 tags:
