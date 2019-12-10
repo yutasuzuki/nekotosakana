@@ -35,7 +35,7 @@ class BlogRoll extends React.Component {
                     </p>
                   </header>
                   <p className="posts-body">
-                    {post.excerpt}
+                    {post.frontmatter.leadtext}
                   </p>
                   <p className="posts-meta">
                     <span className="posts-date">
@@ -69,7 +69,6 @@ export default () => (
         ) {
           edges {
             node {
-              excerpt(pruneLength: 400)
               id
               fields {
                 slug
@@ -79,9 +78,10 @@ export default () => (
                 templateKey
                 date(formatString: "MMMM DD, YYYY")
                 featuredpost
+                leadtext
                 featuredimage {
                   childImageSharp {
-                    fluid(maxWidth: 120, quality: 100) {
+                    fluid(maxWidth: 2048, quality: 100) {
                       ...GatsbyImageSharpFluid
                     }
                   }

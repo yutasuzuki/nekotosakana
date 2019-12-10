@@ -10,6 +10,7 @@
   border: 1px #ccc solid;
   border-radius: 5px;
   padding: 24px;
+  width: 100%;
 }
 
 .referral-card-thumbnail {
@@ -34,10 +35,13 @@
 
 .referral-card-name {
   font-size: 18px;
-  margin-bottom: 12px;
+  margin-top: 0 !important;
+  margin-bottom: 12px !important;
   font-weight: bold;
 }
 
 .referral-card-text {
-  font-size: 14px;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  font-size: 14px !important;
 }

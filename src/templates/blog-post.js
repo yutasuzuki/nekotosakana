@@ -6,16 +6,19 @@ import { graphql, Link } from 'gatsby'
 import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
 import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
+import ReferralCard from '../components/ReferralCard'
 
 export const BlogPostTemplate = ({
   content,
   featuredimage,
   contentComponent,
-  description,
   lead,
   tags,
   title,
   helmet,
+  guestimage,
+  guestname,
+  guesttext,
 }) => {
   const PostContent = contentComponent || Content
 
@@ -35,6 +38,11 @@ export const BlogPostTemplate = ({
           {title}
         </h1>
         <p>{lead}</p>
+        <ReferralCard
+          thumbnail={guestimage.childImageSharp.fluid.src}
+          name={guestname}
+          text={guesttext}
+        />
         <PostContent content={content} />
         {tags && tags.length ? (
           <div>
@@ -58,6 +66,7 @@ BlogPostTemplate.propTypes = {
   featuredimage: PropTypes.object,
   description: PropTypes.string,
   title: PropTypes.string,
+  lead: PropTypes.string,
   helmet: PropTypes.object,
 }
 
@@ -74,6 +83,9 @@ const BlogPost = ({ data }) => {
         title={post.frontmatter.title}
         lead={post.frontmatter.leadtext}
         tags={post.frontmatter.tags}
+        guestimage={post.frontmatter.guestimage}
+        guestname={post.frontmatter.guestname}
+        guesttext={post.frontmatter.guesttext}
         description={post.frontmatter.description}
         featuredimage={post.frontmatter.featuredimage}
         helmet={
