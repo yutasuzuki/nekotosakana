@@ -55,7 +55,7 @@ export const BlogPostTemplate = ({
 BlogPostTemplate.propTypes = {
   content: PropTypes.node.isRequired,
   contentComponent: PropTypes.func,
-  featuredimage: PropTypes.string,
+  featuredimage: PropTypes.object,
   description: PropTypes.string,
   title: PropTypes.string,
   helmet: PropTypes.object,
@@ -71,6 +71,9 @@ const BlogPost = ({ data }) => {
       <BlogPostTemplate
         content={post.html}
         contentComponent={HTMLContent}
+        title={post.frontmatter.title}
+        lead={post.frontmatter.leadtext}
+        tags={post.frontmatter.tags}
         description={post.frontmatter.description}
         featuredimage={post.frontmatter.featuredimage}
         helmet={
@@ -82,8 +85,6 @@ const BlogPost = ({ data }) => {
             />
           </Helmet>
         }
-        tags={post.frontmatter.tags}
-        title={post.frontmatter.title}
       />
     </Layout>
   )
@@ -105,11 +106,21 @@ export const pageQuery = graphql`
       frontmatter {
         date(formatString: "MMMM DD, YYYY")
         title
+        leadtext
         description
         tags
+        guestname
+        guesttext
         featuredimage {
           childImageSharp {
-            fluid(maxWidth: 120, quality: 100) {
+            fluid(maxWidth: 2048, quality: 100) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+        guestimage {
+          childImageSharp {
+            fluid(maxWidth: 2048, quality: 100) {
               ...GatsbyImageSharpFluid
             }
           }
