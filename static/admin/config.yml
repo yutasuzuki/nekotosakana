@@ -10,6 +10,8 @@ backend:
 
 media_folder: static/img
 public_folder: /img
+publish_mode: editorial_workflow
+locale: 'ja'
 
 collections:
   - name: "blog"
@@ -21,9 +23,9 @@ collections:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "blog-post"}
       - {label: "タイトル", name: "title", widget: "string"}
       - {label: "リード文", name: "leadtext", widget: "markdown"}
-      - {label: "ゲストサムネイル", name: "guestimage", widget: image}
-      - {label: "ゲスト名", name: "guestname", widget: "text"}
-      - {label: "ゲスト紹介文", name: "guesttext", widget: "markdown"}
+      - {label: "ゲストサムネイル", name: "guestimage", widget: image, required: false}
+      - {label: "ゲスト名", name: "guestname", widget: "text", required: false}
+      - {label: "ゲスト紹介文", name: "guesttext", widget: "markdown", required: false}
       - {label: "Featured Post", name: "featuredpost", widget: "boolean"}
       - {label: "アイキャッチ画像", name: "featuredimage", widget: image}
       - {label: "本文", name: "body", widget: "markdown"}

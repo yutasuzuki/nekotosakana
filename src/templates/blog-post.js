@@ -21,7 +21,6 @@ export const BlogPostTemplate = ({
   guesttext,
 }) => {
   const PostContent = contentComponent || Content
-  console.log('guestimage', guestimage)
   return (
     <section className="section">
       {helmet || ''}
